@@ -1,0 +1,81 @@
+main {
+    max-height: 75vh;
+    width: auto;
+    flex-grow: 1;
+    padding: 0px 30px 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    grid-gap: 50px;
+    animation: smoothAppearing 1.5s forwards;
+}
+
+@keyframes smoothAppearing {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+}
+
+aside {
+    width: 220px;
+    height: 71vh;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainNavMenuBox {
+    max-width: 220px;
+    width: max-content;
+    padding: 0px 35px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.mainNavMenuElement {
+    list-style: none;
+    padding: 15px 25px;
+    background-color: inherit;
+    border: 1px solid transparent;
+    color: #000000;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.mainNavMenuElement:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border: 1px solid #000000;
+}
+
+.mainNavMenuElement.selected {
+    background-color: #0077B6;
+    color: #FFFFFF;
+}
+
+section {
+    flex-grow: 1;
+    height: 110%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
